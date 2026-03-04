@@ -1,0 +1,25 @@
+{
+  "name": "@nijesmik/eslint-config",
+  "version": "0.1.0",
+  "type": "module",
+  "exports": {
+    ".": "./index.ts"
+  },
+  "files": [
+    "index.ts"
+  ],
+  "dependencies": {
+    "@eslint/json": "^0.14.0",
+    "eslint-plugin-import": "^2.32.0",
+    "eslint-plugin-perfectionist": "^5.4.0",
+    "eslint-plugin-unused-imports": "^4.4.1",
+    "typescript-eslint": "^8.46.4"
+  },
+  "peerDependencies": {
+    "eslint": ">=9.15.0"
+  },
+  "devDependencies": {
+    "@types/node": "^25.3.0",
+    "eslint": "^9.39.1"
+  }
+}
