@@ -3,14 +3,16 @@
   "private": true,
   "type": "module",
   "scripts": {
+    "build": "pnpm -r run build",
     "lint": "eslint .",
     "format": "prettier --write \"**/*.{ts,tsx,md}\"",
     "changeset": "changeset",
     "version": "changeset version",
-    "release": "changeset publish"
+    "release": "pnpm build && changeset publish"
   },
   "devDependencies": {
     "@changesets/cli": "^2.29.8",
+    "tsup": "^8.5.0",
     "@nijesmik/eslint-config": "workspace:*",
     "@nijesmik/prettier-config": "workspace:*",
     "eslint": "^9.39.1",
