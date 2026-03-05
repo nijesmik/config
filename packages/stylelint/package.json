@@ -1,0 +1,37 @@
+{
+  "name": "@nijesmik/stylelint-config",
+  "version": "0.1.0",
+  "type": "module",
+  "main": "./dist/index.js",
+  "types": "./dist/index.d.ts",
+  "exports": {
+    ".": {
+      "types": "./dist/index.d.ts",
+      "import": "./dist/index.js"
+    },
+    "./bem": {
+      "types": "./dist/bem.d.ts",
+      "import": "./dist/bem.js"
+    }
+  },
+  "files": [
+    "dist"
+  ],
+  "scripts": {
+    "build": "tsup index.ts bem.ts --format esm --dts"
+  },
+  "dependencies": {
+    "@stylistic/stylelint-plugin": "^3.0.0",
+    "stylelint-config-standard": "^38.0.0",
+    "stylelint-config-tailwindcss": "^1.0.0"
+  },
+  "peerDependencies": {
+    "stylelint": ">=16.0.0"
+  },
+  "devDependencies": {
+    "stylelint": "^16.19.1"
+  },
+  "publishConfig": {
+    "access": "public"
+  }
+}
