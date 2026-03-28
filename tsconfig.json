@@ -3,6 +3,8 @@
     "strict": true,
     "module": "esnext",
     "moduleResolution": "bundler",
+    "allowImportingTsExtensions": true,
+    "noEmit": true,
     "target": "esnext",
     "skipLibCheck": true
   }

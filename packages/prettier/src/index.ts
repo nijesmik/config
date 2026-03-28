@@ -1,5 +1,5 @@
 import type { Config } from "prettier";
-import * as tailwindcss from "./plugin";
+import * as tailwindcss from "prettier-plugin-tailwindcss";
 
 export default {
   arrowParens: "always",
