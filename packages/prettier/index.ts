@@ -1,4 +1,5 @@
 import type { Config } from "prettier";
+import * as tailwindcss from "prettier-plugin-tailwindcss";
 
 export default {
   arrowParens: "always",
@@ -13,7 +14,7 @@ export default {
   trailingComma: "all",
   useTabs: false,
 
-  plugins: ["prettier-plugin-tailwindcss"],
+  plugins: [tailwindcss],
   tailwindAttributes: ["className", "classNames"],
   tailwindFunctions: ["cn", "tv"],
 } satisfies Config;
