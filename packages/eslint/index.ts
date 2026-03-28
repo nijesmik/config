@@ -66,15 +66,7 @@ export default defineConfig([
           groups: ["unknown", "type-export"],
         },
       ],
-      "perfectionist/sort-objects": [
-        "error",
-        {
-          type: "unsorted",
-          useConfigurationIf: {
-            objectType: "non-destructured",
-          },
-        },
-      ],
+      "perfectionist/sort-objects": "off",
       "perfectionist/sort-union-types": [
         "error",
         {
@@ -87,20 +79,6 @@ export default defineConfig([
         "error",
         {
           groups: ["named", "unknown"],
-        },
-      ],
-      "perfectionist/sort-imports": [
-        "error",
-        {
-          type: "alphabetical",
-          groups: [
-            ["type-import", "type-internal", "type-parent", "type-sibling", "type-index"],
-            ["value-builtin", "value-external"],
-            "value-internal",
-            ["value-parent", "value-sibling", "value-index"],
-            "ts-equals-import",
-            "unknown",
-          ],
         },
       ],
       "import/no-duplicates": ["error", { "prefer-inline": true }],
