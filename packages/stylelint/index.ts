@@ -4,8 +4,21 @@ export default {
   extends: ["stylelint-config-standard", "stylelint-config-tailwindcss"],
   plugins: ["@stylistic/stylelint-plugin"],
   rules: {
-    // @import url() vs @import "" 방식 제한 해제
-    "import-notation": null,
+    // @import "" 방식만 허용
+    "import-notation": "string",
+
+    // @규칙 앞에 빈 줄 필수 (예외: 같은 이름 연속, 첫 번째 중첩, 주석 뒤, else/import)
+    "at-rule-empty-line-before": [
+      "always",
+      {
+        except: ["blockless-after-same-name-blockless", "first-nested"],
+        ignore: ["after-comment"],
+        ignoreAtRules: ["else", "import"],
+      },
+    ],
+
+    // 주석 앞 빈 줄 제한 해제
+    "comment-empty-line-before": null,
 
     // 파일 끝에 빈 줄 필수
     "@stylistic/no-missing-end-of-source-newline": true,
