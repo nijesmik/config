@@ -1,5 +1,11 @@
 # @nijesmik/eslint-config
 
+## 0.1.2
+
+### Patch Changes
+
+- Disable `perfectionist/sort-objects` rule and remove custom `perfectionist/sort-imports` configuration
+
 ## 0.1.1
 
 ### Patch Changes
