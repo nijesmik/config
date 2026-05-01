@@ -51,7 +51,8 @@ export default defineConfig([
     },
   },
   {
-    files: ["src/**/*.{js,mjs,cjs,ts,mts,cts,jsx,tsx}"],
+    files: ["**/*.{js,mjs,cjs,ts,mts,cts,jsx,tsx}"],
+    ignores: ["**/*.config.{js,mjs,cjs,ts,mts,cts}"],
     rules: {
       ...perfectionist.configs["recommended-alphabetical"].rules,
       "perfectionist/sort-switch-case": "off",
