@@ -47,7 +47,7 @@ export default defineConfig([
     rules: {
       "eol-last": ["error", "always"],
       "no-multiple-empty-lines": ["error", { max: 1, maxEOF: 1, maxBOF: 0 }],
-      "unused-imports/no-unused-imports": "error",
+      "unused-imports/no-unused-imports": ["error", { "prefer-inline": false }],
     },
   },
   {
