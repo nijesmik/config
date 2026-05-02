@@ -1,8 +1,8 @@
 import json from "@eslint/json";
 import importPlugin from "eslint-plugin-import";
 import perfectionist from "eslint-plugin-perfectionist";
-import unusedImports from "eslint-plugin-unused-imports";
 import { Alphabet } from "eslint-plugin-perfectionist/alphabet";
+import unusedImports from "eslint-plugin-unused-imports";
 import { defineConfig } from "eslint/config";
 import tseslint from "typescript-eslint";
 
@@ -79,6 +79,7 @@ export default defineConfig([
       "perfectionist/sort-intersection-types": [
         "error",
         {
+          type: "unsorted",
           groups: ["named", "unknown"],
         },
       ],
