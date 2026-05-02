@@ -1,5 +1,13 @@
 # @nijesmik/stylelint-config
 
+## 0.1.1
+
+### Patch Changes
+
+- Require string notation for `@import` (`import-notation: "string"`)
+- Add `at-rule-empty-line-before` rule (require blank line before at-rules)
+- Disable `comment-empty-line-before` rule
+
 ## 0.1.0
 
 ### Minor Changes
