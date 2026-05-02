@@ -18,7 +18,7 @@
     "dist"
   ],
   "scripts": {
-    "build": "tsup index.ts bem.ts --format esm --dts"
+    "build": "tsc"
   },
   "dependencies": {
     "@stylistic/stylelint-plugin": "^3.0.0",
