@@ -5,6 +5,8 @@ import base from "./index.js";
 
 export default defineConfig([
   ...base,
+  // Following eslint-config-next/typescript
+  { ignores: [".next/**", "out/**", "build/**", "next-env.d.ts"] },
   nextPlugin.configs.recommended,
   nextPlugin.configs["core-web-vitals"],
 ]);
