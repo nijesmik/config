@@ -8,16 +8,21 @@
     ".": {
       "types": "./dist/index.d.ts",
       "import": "./dist/index.js"
+    },
+    "./next": {
+      "types": "./dist/next.d.ts",
+      "import": "./dist/next.js"
     }
   },
   "files": [
     "dist"
   ],
   "scripts": {
-    "build": "tsup index.ts --format esm --dts"
+    "build": "tsup index.ts next.ts --format esm --dts"
   },
   "dependencies": {
     "@eslint/json": "^0.14.0",
+    "@next/eslint-plugin-next": "^16.2.6",
     "eslint-plugin-import": "^2.32.0",
     "eslint-plugin-perfectionist": "^5.4.0",
     "eslint-plugin-unused-imports": "^4.4.1",

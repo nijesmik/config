@@ -3,5 +3,5 @@
   "compilerOptions": {
     "types": ["node"]
   },
-  "include": ["index.ts"]
+  "include": ["index.ts", "next.ts"]
 }
