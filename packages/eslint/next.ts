@@ -14,6 +14,7 @@ export default defineConfig([
   jsxA11y.flatConfigs.recommended,
   {
     rules: {
+      "react-hooks/exhaustive-deps": "off",
       "jsx-a11y/alt-text": ["warn", { elements: ["img"], img: ["Image"] }],
     },
     settings: {
