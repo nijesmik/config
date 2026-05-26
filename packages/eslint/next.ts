@@ -10,7 +10,7 @@ export default defineConfig([
   // Following eslint-config-next/typescript
   { ignores: [".next/**", "out/**", "build/**", "next-env.d.ts"] },
   nextPlugin.configs["core-web-vitals"],
-  reactHooks.configs["recommended-latest"],
+  reactHooks.configs.flat["recommended-latest"],
   jsxA11y.flatConfigs.recommended,
   {
     rules: {
