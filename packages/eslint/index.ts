@@ -1,6 +1,7 @@
 import json from "@eslint/json";
 import importPlugin from "eslint-plugin-import";
 import perfectionist from "eslint-plugin-perfectionist";
+import react from "eslint-plugin-react";
 import { Alphabet } from "eslint-plugin-perfectionist/alphabet";
 import unusedImports from "eslint-plugin-unused-imports";
 import { defineConfig } from "eslint/config";
@@ -102,6 +103,13 @@ export default defineConfig([
           groups: ["value-import", { newlinesBetween: 0 }, "type-import"],
         },
       ],
+    },
+  },
+  {
+    files: ["**/*.{jsx,tsx}"],
+    plugins: { react },
+    rules: {
+      "react/jsx-curly-brace-presence": ["error", { props: "never", children: "never" }],
     },
   },
   {
